@@ -1,0 +1,240 @@
+---
+title: "THE UNIVERSITY OF BRITISH COLUMBIA"
+output: 
+  word_document:
+    reference_docx: ubc-cv-teaching-stream-template.docx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, ft.align = "left")
+library(readr)
+library(flextable)
+library(magrittr)
+
+theme_ubc_cv <- function(x) {
+  theme_box(x) %>% 
+  align(align = "center", part = "header") %>% 
+  align(align = "left", part = "body") %>%
+  set_table_properties(width = 1, layout = "autofit") %>%
+  bold(part = "header")
+}
+```
+
+#### Curriculum Vitae for Faculty Members
+
+**Date:** 2020-07-28 **Initials:** F.N.
+
+1. **SURNAME:** Nightingale    **FIRST NAME:** Florence **MIDDLE NAME(S):**
+
+2. **DEPARTMENT/SCHOOL:** Statistics
+
+3. **FACULTY:** Science
+
+4. **PRESENT RANK:** Assistant Professor of Teaching    **SINCE:** 1844
+
+5. [POST-SECONDARY EDUCATION]{custom-style="UnderlinedBold"}
+
+```{r post-sec-ed}
+read_csv("post-sec-ed.csv") %>%
+  flextable() %>% 
+  theme_ubc_cv()  
+```
+
+**Special Professional Qualifications**
+
+6.	[EMPLOYMENT RECORD]{custom-style="UnderlinedBold"}
+
+*(a)	Prior to coming to UBC*
+
+
+```{r emp-rec-prior-ubc}
+read_csv("emp-rec-prior-ubc.csv") %>% 
+  flextable() %>% 
+  theme_ubc_cv() %>% 
+  width(j = "University, Company or Organization", 4) 
+```
+
+
+*(b)	At UBC*
+	
+```{r emp-rec-at-ubc}
+read_csv("emp-rec-at-ubc.csv") %>% 
+  flextable() %>% 
+  theme_ubc_cv() 
+```
+
+*(c)	Date of granting of tenure at U.B.C.:*
+
+7.	[LEAVES OF ABSENCE]{custom-style="UnderlinedBold"}
+
+```{r leaves-absence}
+read_csv("leaves-absence.csv") %>% 
+  flextable() %>% 
+  theme_ubc_cv()
+```
+
+8.	[TEACHING]{custom-style="UnderlinedBold"}
+
+*(a)	Areas of special interest and accomplishments*
+
+*(b)	Courses Taught at UBC* 
+
+```{r courses-taught-at-ubc}
+read_csv("courses-taught-at-ubc.csv") %>% 
+  flextable() %>% 
+  width(j = "Total Scheduled Hours", 0.9) %>% 
+  width(j = "Lectures", 0.8) %>% 
+  width(j = "Tutorials", 0.8) %>% 
+  width(j = "Labs", 0.8) %>% 
+  width(j = "Other", 0.8) %>% 
+  add_header_row(values = c("", "Total Hours Taught per Course"), colwidths = c(4, 4)) %>%
+  theme_ubc_cv()
+```
+
+*(c)	Graduate Students Supervised (If Applicable)*
+
+```{r students-supervised-at-ubc}
+read_csv("students-supervised-at-ubc.csv") %>% 
+  flextable() %>% 
+  width(j = "Student Name", 2) %>% 
+  width(j = "Program Type", 0.8) %>% 
+  width(j = "Start", 0.7) %>% 
+  width(j = "Finish", 0.7) %>% 
+  width(j = "Supervisory Role (supervisor, co-supervisor, committee member)", 2.25) %>% 
+  add_header_row(values = c("", "Year", ""), colwidths = c(2, 2, 1)) %>% 
+  theme_ubc_cv()
+```			
+				
+*(d)	A summary of student evaluations of teaching effectiveness scores over the past five years (or since appointment if less than five years)*
+
+*(e) Continuing Education Activities*
+
+*(f) Visiting Lecturer (indicate university/organization and dates)*
+
+*(g)	Other*
+
+9.	[EDUCATIONAL LEADERSHIP]{custom-style="UnderlinedBold"}
+
+*(a)	Areas of special interest and accomplishments*
+
+*(b)	 Curriculum development/renewal*
+
+*(c)	Pedagogical innovation*
+
+*(d)	Applications of and contributions to the scholarship of teaching and learning*
+
+*(e)	Teaching and Learning Grants*
+
+*(f)	Formal educational leadership responsibilities*
+
+*(g)	Innovation in the use of learning technology*
+
+*(h)	Other educational leadership contributions*
+
+10.	[SCHOLARLY AND PROFESSIONAL ACTIVITIES]{custom-style="UnderlinedBold"}
+
+*(a)	Areas of special interest and accomplishments*
+
+*(b)	Invited Presentations (Identify whether International/National/Local)*
+
+*(c)	Other Presentations*
+
+*(d)	Other*
+
+*(e)	Conference Participation (Organizer, Keynote Speaker, etc.)*
+
+
+11.	[SERVICE TO THE UNIVERSITY]{custom-style="UnderlinedBold"}
+
+*(a)	Areas of special interest and accomplishments*
+
+*(b)	Memberships on committees, including offices held and dates*
+
+*(c)	Other service, including dates*
+
+12.	[SERVICE TO THE COMMUNITY]{custom-style="UnderlinedBold"}
+
+*(a)	Memberships on scholarly societies, including offices held and dates*
+
+*(b)	Memberships on other societies, including offices held and dates*
+
+*(c)	Memberships on scholarly committees, including offices held and dates*
+
+*(d)	Memberships on other committees, including offices held and dates*
+
+*(e)	Editorships (list journal and dates)*
+
+*(f)	Reviewer (journal, agency, etc. including dates)*
+
+*(g)	External examiner (indicate universities and dates)*
+
+*(h)	Consultant (indicate organization and dates)*
+
+*(i)	Other service to the community*
+
+
+13.	[AWARDS AND DISTINCTIONS]{custom-style="UnderlinedBold"}
+
+*(a)	Awards and nominations for Teaching awards (indicate name of award, awarding organizations, date)*
+
+[Awards received by graduate students or postdoctoral fellows under your supervision may be included in a separate section.]{custom-style="UnderlinedIndented"}
+
+*(b)	Awards for Scholarship (indicate name of award, awarding organizations, date)*
+
+*(c)	Awards for Service (indicate name of award, awarding organizations, date)*
+
+*(d)	Other Awards*
+
+14.	[OTHER RELEVANT INFORMATION (Maximum One Page)]{custom-style="UnderlinedBold"}
+
+\pagebreak
+
+### THE UNIVERSITY OF BRITISH COLUMBIA
+
+#### Publications Record
+
+If Applicable – not required in the Professor of Teaching Stream
+
+|                         |                           |           |
+|-------------------------|---------------------------|-----------|
+|[**SURNAME:**]{custom-style="BigFont"} Nightingale |**FIRST NAME:**	Florence	|		        |
+|   		                  |**Initials:** F.N.         |           |
+|		                      |**MIDDLE NAME(S):**				|**Date:**  |
+      
+       
+1. [REFEREED PUBLICATIONS]{custom-style="UnderlinedBold"}
+
+*(a)	Journals*
+
+*(b)	Conference Proceedings*
+
+*(c)	Other*
+
+2. [NON-REFEREED PUBLICATIONS]{custom-style="UnderlinedBold"}
+
+*(a)	Journals*
+
+*(b)	Conference Proceedings*
+
+*(c)	Other*
+
+3. [BOOKS]{custom-style="UnderlinedBold"}
+
+*(a)	Authored*
+
+*(b)	Edited*
+
+*(c)	Chapters*
+
+4.	[SPECIAL COPYRIGHTS]{custom-style="UnderlinedBold"}
+
+5.	[ARTISTIC WORKS, PERFORMANCES, DESIGNS]{custom-style="UnderlinedBold"}
+
+6.	[OTHER WORKS]{custom-style="UnderlinedBold"}
+
+7.	[WORK SUBMITTED]{custom-style="UnderlinedBold"} (including publisher and date of submission)
+
+8.	[WORK IN PROGRESS]{custom-style="UnderlinedBold"} (including degree of completion)
+			
+			
+
