@@ -1,16 +1,18 @@
 Package: ubcv
-Title: What the Package Does (One Line, Title Case)
+Title: R Markdown template for the UBC Faculty CV
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Tiffany",
+           family = "Timbers",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "tiffany.timbers@stat.ubc.ca",
+           comment = c(ORCID = "0000-0002-2667-376X"))
+Description: Reproducible R Markdown > Word template for the UBC Faculty CV (teaching stream only currently)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+Imports: 
+    flextable,
+    magrittr
