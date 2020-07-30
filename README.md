@@ -10,6 +10,8 @@
 The goal of ubccv is to allow you to use R Markdown to create and edit
 your UBC Faculty CV without having to touch a word document.
 
+<img src="man/figures/ubccv.png" width=600>
+
 ## Installation
 
 You can install the development version from
