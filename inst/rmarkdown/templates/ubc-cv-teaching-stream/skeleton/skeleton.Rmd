@@ -21,15 +21,15 @@ library(ubccv)
 **Date:** 2020-07-28 **Initials:** F.N.
 :::
 
-1. **SURNAME:** Nightingale    **FIRST NAME:** Florence **MIDDLE NAME(S):**
+1\. **SURNAME:** Nightingale    **FIRST NAME:** Florence **MIDDLE NAME(S):**
 
-2. **DEPARTMENT/SCHOOL:** Statistics
+2\. **DEPARTMENT/SCHOOL:** Statistics
 
-3. **FACULTY:** Science
+3\. **FACULTY:** Science
 
-4. **PRESENT RANK:** Assistant Professor of Teaching    **SINCE:** 1844
+4\. **PRESENT RANK:** Assistant Professor of Teaching    **SINCE:** 1844
 
-5. [POST-SECONDARY EDUCATION]{custom-style="UnderlinedBold"}
+5\. [POST-SECONDARY EDUCATION]{custom-style="UnderlinedBold"}
 
 ```{r post-sec-ed}
 read_csv("post-sec-ed.csv") %>%
@@ -43,7 +43,7 @@ read_csv("post-sec-ed.csv") %>%
 
 <br>
 
-6.	[EMPLOYMENT RECORD]{custom-style="UnderlinedBold"}
+6\.	[EMPLOYMENT RECORD]{custom-style="UnderlinedBold"}
 
 *(a)	Prior to coming to UBC*
 
@@ -71,7 +71,7 @@ read_csv("emp-rec-at-ubc.csv") %>%
 
 <br>
 
-7.	[LEAVES OF ABSENCE]{custom-style="UnderlinedBold"}
+7\.	[LEAVES OF ABSENCE]{custom-style="UnderlinedBold"}
 
 <br>
 
@@ -83,7 +83,7 @@ read_csv("leaves-absence.csv") %>%
 
 <br>
 
-8.	[TEACHING]{custom-style="UnderlinedBold"}
+8\.	[TEACHING]{custom-style="UnderlinedBold"}
 
 *(a)	Areas of special interest and accomplishments*
 
@@ -129,7 +129,7 @@ read_csv("students-supervised-at-ubc.csv") %>%
 
 <br>
 
-9.	[EDUCATIONAL LEADERSHIP]{custom-style="UnderlinedBold"}
+9\.	[EDUCATIONAL LEADERSHIP]{custom-style="UnderlinedBold"}
 
 *(a)	Areas of special interest and accomplishments*
 
@@ -149,7 +149,7 @@ read_csv("students-supervised-at-ubc.csv") %>%
 
 <br>
 
-10.	[SCHOLARLY AND PROFESSIONAL ACTIVITIES]{custom-style="UnderlinedBold"}
+10\.	[SCHOLARLY AND PROFESSIONAL ACTIVITIES]{custom-style="UnderlinedBold"}
 
 *(a)	Areas of special interest and accomplishments*
 
@@ -163,7 +163,7 @@ read_csv("students-supervised-at-ubc.csv") %>%
 
 <br>
 
-11.	[SERVICE TO THE UNIVERSITY]{custom-style="UnderlinedBold"}
+11\.	[SERVICE TO THE UNIVERSITY]{custom-style="UnderlinedBold"}
 
 *(a)	Areas of special interest and accomplishments*
 
@@ -173,7 +173,7 @@ read_csv("students-supervised-at-ubc.csv") %>%
 
 <br>
 
-12.	[SERVICE TO THE COMMUNITY]{custom-style="UnderlinedBold"}
+12\.	[SERVICE TO THE COMMUNITY]{custom-style="UnderlinedBold"}
 
 *(a)	Memberships on scholarly societies, including offices held and dates*
 
@@ -195,7 +195,7 @@ read_csv("students-supervised-at-ubc.csv") %>%
 
 <br>
 
-13.	[AWARDS AND DISTINCTIONS]{custom-style="UnderlinedBold"}
+13\.	[AWARDS AND DISTINCTIONS]{custom-style="UnderlinedBold"}
 
 *(a)	Awards and nominations for Teaching awards (indicate name of award, awarding organizations, date)*
 
@@ -209,7 +209,7 @@ read_csv("students-supervised-at-ubc.csv") %>%
 
 <br>
 
-14.	[OTHER RELEVANT INFORMATION]{custom-style="UnderlinedBold"} [(Maximum One Page)]{custom-style="justdBold"}
+14\.	[OTHER RELEVANT INFORMATION]{custom-style="UnderlinedBold"} [(Maximum One Page)]{custom-style="justdBold"}
 
 \pagebreak
 
@@ -227,7 +227,7 @@ If Applicable – not required in the Professor of Teaching Stream
       
 <br>
        
-1. [REFEREED PUBLICATIONS]{custom-style="UnderlinedBold"}
+1\. [REFEREED PUBLICATIONS]{custom-style="UnderlinedBold"}
 
 *(a)	Journals*
 
@@ -237,7 +237,7 @@ If Applicable – not required in the Professor of Teaching Stream
 
 <br>
 
-2. [NON-REFEREED PUBLICATIONS]{custom-style="UnderlinedBold"}
+2\. [NON-REFEREED PUBLICATIONS]{custom-style="UnderlinedBold"}
 
 *(a)	Journals*
 
@@ -247,7 +247,7 @@ If Applicable – not required in the Professor of Teaching Stream
 
 <br>
 
-3. [BOOKS]{custom-style="UnderlinedBold"}
+3\. [BOOKS]{custom-style="UnderlinedBold"}
 
 *(a)	Authored*
 
@@ -257,20 +257,20 @@ If Applicable – not required in the Professor of Teaching Stream
 
 <br>
 
-4.	[SPECIAL COPYRIGHTS]{custom-style="UnderlinedBold"}
+4\.	[SPECIAL COPYRIGHTS]{custom-style="UnderlinedBold"}
 
 <br>
 
-5.	[ARTISTIC WORKS, PERFORMANCES, DESIGNS]{custom-style="UnderlinedBold"}
+5\.	[ARTISTIC WORKS, PERFORMANCES, DESIGNS]{custom-style="UnderlinedBold"}
 
 <br>
 
-6.	[OTHER WORKS]{custom-style="UnderlinedBold"}
+6\.	[OTHER WORKS]{custom-style="UnderlinedBold"}
 
 <br>
 
-7.	[WORK SUBMITTED]{custom-style="UnderlinedBold"} [(including publisher and date of submission)]{custom-style="justdBold"}
+7\.	[WORK SUBMITTED]{custom-style="UnderlinedBold"} [(including publisher and date of submission)]{custom-style="justdBold"}
 
 <br>
 
-8.	[WORK IN PROGRESS]{custom-style="UnderlinedBold"} [(including degree of completion)]{custom-style="justdBold"}
+8\.	[WORK IN PROGRESS]{custom-style="UnderlinedBold"} [(including degree of completion)]{custom-style="justdBold"}
