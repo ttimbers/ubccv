@@ -2,22 +2,15 @@
 title: "THE UNIVERSITY OF BRITISH COLUMBIA"
 output: 
   word_document:
-    reference_docx: ubc-cv-teaching-stream-template.docx
+    reference_docx: reference.docx
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, ft.align = "left")
-library(readr)
 library(flextable)
 library(magrittr)
-
-theme_ubc_cv <- function(x) {
-  theme_box(x) %>% 
-  align(align = "center", part = "header") %>% 
-  align(align = "left", part = "body") %>%
-  set_table_properties(width = 1, layout = "autofit") %>%
-  bold(part = "header")
-}
+library(readr)
+library(ubccv)
 ```
 
 #### Curriculum Vitae for Faculty Members
@@ -235,6 +228,3 @@ If Applicable – not required in the Professor of Teaching Stream
 7.	[WORK SUBMITTED]{custom-style="UnderlinedBold"} (including publisher and date of submission)
 
 8.	[WORK IN PROGRESS]{custom-style="UnderlinedBold"} (including degree of completion)
-			
-			
-

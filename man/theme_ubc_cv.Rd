@@ -16,6 +16,9 @@ flextable object
 Theme for UBC CV tables
 }
 \examples{
+library(flextable)
+library(ubccv)
+
 flextable(mtcars) \%>\%
  theme_ubc_cv()
 }
