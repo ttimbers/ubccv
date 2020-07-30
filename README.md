@@ -32,7 +32,7 @@ devtools::install_github("ttimbers/ubccv")
 
 <img src="man/figures/template.png" width=500>
 
-3.  Edit the document to add text, and add data to the 6 `.csv` files to
+3.  Edit the document to add text, and add data to the 7 `.csv` files to
     fill in the tables.
 
 4.  Click the “knit” button to render to Word\! 😂
