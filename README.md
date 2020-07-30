@@ -24,13 +24,18 @@ devtools::install_github("ttimbers/ubccv")
 
 ## Usage
 
-Inside RStudio, click on "Create a new R Markdown document:
+1.  Inside RStudio, click on “Create a new R Markdown document”:
 
 <img src="man/figures/create_rmd.png" width=500>
 
-Next, select “ubc-cv-teaching-stream” from the “From Template” menu:
+2.  Next, select “ubc-cv-teaching-stream” from the “From Template” menu:
 
 <img src="man/figures/template.png" width=500>
+
+3.  Edit the document to add text, and add data to the 6 `.csv` files to
+    fill in the tables.
+
+4.  Click the “knit” button to render to Word\! 😂
 
 ## Code of Conduct
 
