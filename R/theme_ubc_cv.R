@@ -6,12 +6,15 @@
 #' @export
 #'
 #' @examples
+#' library(flextable)
+#' library(ubccv)
+#'
 #'flextable(mtcars) %>%
 #'  theme_ubc_cv()
 theme_ubc_cv <- function(x) {
-  theme_box(x) %>%
-    align(align = "center", part = "header") %>%
-    align(align = "left", part = "body") %>%
-    set_table_properties(width = 1, layout = "autofit") %>%
-    bold(part = "header")
+  flextable::theme_box(x) %>%
+    flextable::align(align = "center", part = "header") %>%
+    flextable::align(align = "left", part = "body") %>%
+    flextable::set_table_properties(width = 1, layout = "autofit") %>%
+    flextable::bold(part = "header")
 }
