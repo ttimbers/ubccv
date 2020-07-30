@@ -9,6 +9,7 @@ Authors@R:
            comment = c(ORCID = "0000-0002-2667-376X"))
 Description: Reproducible R Markdown > Word template for the UBC Faculty CV (teaching stream only currently).
 License: MIT + file LICENSE
+URL: https://ttimbers.github.io/ubccv/, https://github.com/ttimbers/ubccv
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
