@@ -121,6 +121,14 @@ read_csv("students-supervised-at-ubc.csv") %>%
 				
 *(d)	A summary of student evaluations of teaching effectiveness scores over the past five years (or since appointment if less than five years)*
 
+```{r student-eval-summary}
+read_csv("student-eval-summary.csv") %>% 
+  flextable() %>% 
+  theme_ubc_cv()
+```
+
+<br>
+
 *(e) Continuing Education Activities*
 
 *(f) Visiting Lecturer (indicate university/organization and dates)*
