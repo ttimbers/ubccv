@@ -11,6 +11,8 @@ library(flextable)
 library(magrittr)
 library(readr)
 library(ubccv)
+library(dplyr)
+library(tidyr)
 ```
 
 #### Curriculum Vitae for Faculty Members
@@ -33,6 +35,7 @@ library(ubccv)
 
 ```{r post-sec-ed}
 read_csv("post-sec-ed.csv") %>%
+  mutate_all(~ replace_na(.x, "")) %>%
   flextable() %>% 
   theme_ubc_cv()  
 ```
@@ -49,7 +52,8 @@ read_csv("post-sec-ed.csv") %>%
 
 
 ```{r emp-rec-prior-ubc}
-read_csv("emp-rec-prior-ubc.csv") %>% 
+read_csv("emp-rec-prior-ubc.csv") %>%
+  mutate_all(~ replace_na(.x, "")) %>%
   flextable() %>% 
   theme_ubc_cv() %>% 
   width(j = "University, Company or Organization", 4) 
@@ -60,7 +64,8 @@ read_csv("emp-rec-prior-ubc.csv") %>%
 *(b)	At UBC*
 	
 ```{r emp-rec-at-ubc}
-read_csv("emp-rec-at-ubc.csv") %>% 
+read_csv("emp-rec-at-ubc.csv") %>%
+  mutate_all(~ replace_na(.x, "")) %>%
   flextable() %>% 
   theme_ubc_cv() 
 ```
@@ -76,7 +81,8 @@ read_csv("emp-rec-at-ubc.csv") %>%
 <br>
 
 ```{r leaves-absence}
-read_csv("leaves-absence.csv") %>% 
+read_csv("leaves-absence.csv") %>%
+  mutate_all(~ replace_na(.x, "")) %>%
   flextable() %>% 
   theme_ubc_cv()
 ```
@@ -90,7 +96,8 @@ read_csv("leaves-absence.csv") %>%
 *(b)	Courses Taught at UBC* 
 
 ```{r courses-taught-at-ubc}
-read_csv("courses-taught-at-ubc.csv") %>% 
+read_csv("courses-taught-at-ubc.csv") %>%
+  mutate_all(~ replace_na(.x, "")) %>%
   flextable() %>% 
   width(j = "Total Scheduled Hours", 0.9) %>% 
   width(j = "Lectures", 0.8) %>% 
@@ -106,7 +113,8 @@ read_csv("courses-taught-at-ubc.csv") %>%
 *(c)	Graduate Students Supervised (If Applicable)*
 
 ```{r students-supervised-at-ubc}
-read_csv("students-supervised-at-ubc.csv") %>% 
+read_csv("students-supervised-at-ubc.csv") %>%
+  mutate_all(~ replace_na(.x, "")) %>%
   flextable() %>% 
   width(j = "Student Name", 2) %>% 
   width(j = "Program Type", 0.8) %>% 
@@ -122,7 +130,8 @@ read_csv("students-supervised-at-ubc.csv") %>%
 *(d)	A summary of student evaluations of teaching effectiveness scores over the past five years (or since appointment if less than five years)*
 
 ```{r student-eval-summary}
-read_csv("student-eval-summary.csv") %>% 
+read_csv("student-eval-summary.csv") %>%
+  mutate_all(~ replace_na(.x, "")) %>%
   flextable() %>% 
   theme_ubc_cv()
 ```
