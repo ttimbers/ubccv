@@ -1,0 +1,304 @@
+---
+title: "ANNUAL REPORT"
+output: 
+  word_document:
+    reference_docx: reference.docx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, ft.align = "left")
+library(flextable)
+library(magrittr)
+library(readr)
+library(ubccv)
+library(dplyr)
+library(tidyr)
+```
+
+### for Faculty Members - Educational Leadership Stream
+
+### [April 1, 2022 - March 31, 2023]{custom-style="UnderlinedBold"}
+
+
+1\. **NAME:** Florence Nightingale 
+
+2\. **DEPARTMENT/SCHOOL:** Statistics
+
+4\. **PRESENT RANK:** Assistant Professor of Teaching    **SINCE:** 1844
+
+7\.	[LEAVES OF ABSENCE DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+<br>
+
+```{r leaves-absence}
+read_csv("leaves-absence.csv") %>%
+  flextable() %>% 
+  theme_ubc_cv()
+```
+
+<br>
+
+8\.	[TEACHING DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+
+*(b)	Courses Taught at UBC* 
+
+```{r courses-taught-at-ubc}
+read_csv("courses-taught-at-ubc.csv") %>%
+  flextable() %>% 
+  width(j = "Session", 0.9) %>% 
+  width(j = "Course Number", 0.8) %>% 
+  width(j = "Scheduled Hours", 0.8) %>% 
+  width(j = "Class Size", 0.8) %>% 
+  width(j = "Comments", 0.8) %>% 
+  theme_ubc_cv()
+```
+
+<br>
+
+Directed Studies Taught
+
+```{r directed-studies-taught}
+read_csv("directed-studies-taught.csv") %>%
+  flextable() %>% 
+  width(j = "Session", 0.9) %>% 
+  width(j = "Course Number", 0.8) %>% 
+  width(j = "Scheduled Hours", 0.8) %>% 
+  width(j = "Class Size", 0.8) %>% 
+  width(j = "Comments", 0.8) %>% 
+  theme_ubc_cv()
+```
+
+<br>
+
+*(c)	Graduate Students Supervised (If Applicable)*
+
+```{r students-supervised-at-ubc}
+read_csv("students-supervised-at-ubc.csv") %>%
+  flextable() %>% 
+  width(j = "Student Name", 2) %>% 
+  width(j = "Program Type", 0.8) %>% 
+  width(j = "Year (Start-Finish)", 0.7) %>% 
+  width(j = "Supervisory Role (supervisor, co-supervisor, committee member)", 2.25) %>%
+  width(j = "Specify whether UBC student or non-UBC student", 1.25) %>%
+  theme_ubc_cv()
+```	
+
+<br> 
+```{r other-supervisions}
+read_csv("other-supervisions.csv") %>%
+  flextable() %>% 
+  width(j = "Name", 2) %>% 
+  width(j = "Program Type", 0.8) %>% 
+  width(j = "Year (Start-Finish)", 0.7) %>% 
+  width(j = "Supervisory Role (supervisor, co-supervisor, committee member)", 2.25) %>%
+  width(j = "Comments", 1.25) %>%
+  theme_ubc_cv()
+```	
+				
+<br>
+
+*(e) Continuing Education Activities*
+
+*(f) Visiting Lecturer (indicate university/organization and dates)*
+
+*(g)	Other*
+
+<br>
+
+9\.	[EDUCATIONAL LEADERSHIP DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+*(a)	Areas of special interest and accomplishments*
+
+*(b)	 Curriculum development/renewal*
+
+*(c)	Pedagogical innovation*
+
+*(d)	Applications of and contributions to the scholarship of teaching and learning*
+
+*(e)	Teaching and Learning Grants*
+
+
+```{r teaching-grants}
+read_csv("teaching-grants.csv") %>%
+  flextable() %>% 
+  width(j = "Granting agency and type of grant", 2) %>% 
+  width(j = "$ Total (per year)", 0.8) %>% 
+  width(j = "Years", 0.7) %>% 
+  width(j = "Principal Investigator", 1.25) %>%
+  width(j = "Co-investigators", 1.25) %>%
+  theme_ubc_cv()
+```	
+
+*(f)	Formal educational leadership responsibilities*
+
+*(g)	Innovation in the use of learning technology*
+
+*(h)	Other educational leadership contributions*
+
+<br>
+
+10\.	[SCHOLARLY AND PROFESSIONAL ACTIVITIES DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+*(a)	Areas of special interest and accomplishments*
+
+*(b)	Invited Presentations (Identify whether International/National/Local)*
+
+*(c)	Other Presentations*
+
+*(d)	Other*
+
+*(e)	Conference Participation (Organizer, Keynote Speaker, etc.)*
+
+*(f)  Research or equivalent grants or contracts _awarded during the reporting period_*
+
+```{r research-grants}
+read_csv("research-grants.csv") %>%
+  flextable() %>% 
+  width(j = "Granting agency and type of grant", 2) %>% 
+  width(j = "Subject", 2) %>% 
+  width(j = "COMP", 0.8) %>% 
+  width(j = "$ Total (per year)", 0.8) %>% 
+  width(j = "Years", 0.7) %>% 
+  width(j = "Principal Investigator", 1.25) %>%
+  width(j = "Co-investigators", 1.25) %>%
+  theme_ubc_cv()
+```	
+
+<br>
+
+11\.	[SERVICE TO THE UNIVERSITY DURING THE REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+<br>
+
+[SERVICE TO THE DEPARTMENT/SCHOOL DURING THE REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+
+
+<br>
+
+12\.	[SERVICE TO THE COMMUNITY DURING THE REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+*(a)	Memberships on scholarly societies, including offices held and dates*
+
+*(b)	Memberships on other societies, including offices held and dates*
+
+*(c)	Memberships on scholarly committees, including offices held and dates*
+
+*(d)	Memberships on other committees, including offices held and dates*
+
+*(e)	Editorships (list journal and dates)*
+
+*(f)	Reviewer (journal, agency, etc. including dates)*
+
+*(g)	External examiner (indicate universities and dates)*
+
+*(h)	Consultant (indicate organization and dates)*
+
+*(i)	Other service to the community*
+
+<br>
+
+13\.	[AWARDS AND DISTINCTIONS DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+*(a)	Awards for Teaching awards (indicate name of award, awarding organizations, date)*
+
+*(b)	Awards for Scholarship (indicate name of award, awarding organizations, date)*
+
+*(c)	Awards for Service (indicate name of award, awarding organizations, date)*
+
+*(d)	Other Awards*
+
+
+\pagebreak
+
+[**ANNUAL REPORT**]{custom-style="TitleCase"}
+
+### for Faculty Members - Educational Leadership Stream
+
+### [April 1, 2022 - March 31, 2023]{custom-style="UnderlinedBold"}
+
+#### Publications Record
+
+If Applicable - not required in the Professor of Teaching Stream
+
+|                         |                           |           |
+|-------------------------|---------------------------|-----------|
+|[**SURNAME:**]{custom-style="BigFont"} Nightingale |[**FIRST NAME:**]{custom-style="BigFont"}	Florence	|**Date:**  |
+
+      
+<br>
+       
+1\. [REFEREED PUBLICATIONS DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+[REFEREED IN PRESS]{custom-style="UnderlinedBold"}
+
+*(a)	Monographs / Books*
+
+*(b)	Journal Articles*
+
+*(c)	Chapters*
+
+*(d)	Conference Proceedings*
+
+*(e)	Edited Books / Journal Issues*
+
+*(f)	Other*
+
+[REFEREED IN PRINT/PUBLISHED]{custom-style="UnderlinedBold"}
+
+*(a)	Monographs / Books*
+
+*(b)	Journal Articles*
+
+*(c)	Chapters*
+
+*(d)	Conference Proceedings*
+
+*(e)	Edited Books / Journal Issues*
+
+*(f)	Other*
+
+<br>
+
+2\. [NON-REFEREED PUBLICATIONS DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+[NON-REFEREED IN PRESS]{custom-style="UnderlinedBold"}
+
+*(a)	Monographs / Books*
+
+*(b)	Journal Articles*
+
+*(c)	Chapters*
+
+*(d)	Conference Proceedings*
+
+*(e)	Edited Books / Journal Issues*
+
+*(f)	Other*
+
+[NON-REFEREED IN PRINT/PUBLISHED]{custom-style="UnderlinedBold"}
+
+*(a)	Monographs / Books*
+
+*(b)	Journal Articles*
+
+*(c)	Chapters*
+
+*(d)	Conference Proceedings*
+
+*(e)	Edited Books / Journal Issues*
+
+*(f)	Other*
+
+
+5\.	[ARTISTIC WORKS, PERFORMANCES, DESIGNS DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+<br>
+
+6\.	[OTHER WORKS DURING REPORTING PERIOD]{custom-style="UnderlinedBold"}
+
+\pagebreak
+
+[CONTEXT]{custom-style="UnderlinedBold"} [(Maximum: 1 page)]{custom-style="justdBold"}
+_This section is optional. The Collective Agreement allows members to “include an indication of the nature and significance of the activities” that they have stated in their Annual Report_
