@@ -37,6 +37,12 @@ devtools::install_github("ttimbers/ubccv")
 
 4.  Click the “knit” button to render to Word\! 😂
 
+## Annual Reports
+
+You can also use this to create an annual report, along the same lines.  Select "ubc-ar-teaching-stream" instead, when choosing a template.
+
+* If you use the summary table, you should edit it lightly in Word after for alignment; see the "tips" in in the document.
+
 ## Code of Conduct
 
 Please note that the ubccv project is released with a [Contributor Code
